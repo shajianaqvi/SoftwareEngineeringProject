@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Management</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+</head>
+<body>
+  <h1>Employee Dashboard</h1>
+
+  <div>
+    <input type="text" id="empName" placeholder="Employee Name" />
+    <input type="text" id="empRole" placeholder="Role (Employee / Manager)" />
+    <button onclick="addEmployee()">Add Employee</button>
+  </div>
+
+  <h3>All Employees</h3>
+  <ul id="employeeList"></ul>
+
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
